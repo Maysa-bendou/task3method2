@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1E0D41"
+    android:padding="16dp">
+
+    <!-- Solve Equation Title -->
+    <TextView
+        android:id="@+id/solveEquationTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Solve Your Equation"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <!-- Title for Coefficients -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter coefficient of equation"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- White Background for Coefficients Section -->
+    <LinearLayout
+        android:id="@+id/formContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:padding="16dp">
+
+        <!-- Coefficient a and X² label -->
+        <EditText
+            android:id="@+id/inputA"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#020202"
+            android:hint="a"
+            android:inputType="numberDecimal"
+            android:padding="8dp"
+            android:textColor="#050505"
+            android:textColorHint="#000000" />
+
+        <!-- Multiply label (X² +) -->
+        <TextView
+            android:id="@+id/multiplyLabel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X² +"
+            android:textColor="#050505"
+            android:layout_gravity="center_vertical"/>
+
+        <!-- Coefficient b and X label -->
+        <EditText
+            android:id="@+id/inputB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#000000"
+            android:hint="b"
+            android:inputType="numberDecimal"
+            android:padding="8dp"
+            android:textColor="#0E0E0E"
+            android:textColorHint="#070707" />
+
+        <!-- Multiply label (X +) -->
+        <TextView
+            android:id="@+id/multiplyLabel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X +"
+            android:textColor="#090909"
+            android:layout_gravity="center_vertical"/>
+
+        <!-- Coefficient c -->
+        <EditText
+            android:id="@+id/inputC"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#000000"
+            android:hint="c"
+            android:inputType="numberDecimal"
+            android:padding="8dp"
+            android:textColor="#050505"
+            android:textColorHint="#050505" />
+
+    </LinearLayout>
+
+    <!-- Solve Button -->
+    <Button
+        android:id="@+id/btnSolve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#C70687"
+        android:text="Solve"
+        android:textColor="#FFFFFF" />
+
+    <!-- Reset Button -->
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#C70687"
+        android:text="Initialise"
+        android:textColor="#FFFFFF" />
+
+    <!-- Solutions -->
+    <TextView
+        android:id="@+id/solutions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Solutions"
+        android:textColor="#F1EFEF" />
+
+</LinearLayout>
